@@ -1,6 +1,6 @@
 echo "++++++++  Iniciando Servidor ++++++++"
 
-copy /y "index.jsp" "apache-tomcat-8.5.100\webapps"
+copy /y "index.jsp" "apache-tomcat-8.5.100\webapps\ROOT"
 
 cd .\apache-tomcat-8.5.100\
 
