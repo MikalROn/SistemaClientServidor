@@ -23,12 +23,13 @@
             if (primeiraNotaStr != null && !primeiraNotaStr.isEmpty() &&
                 segundaNotaStr != null && !segundaNotaStr.isEmpty()) {
 
-                int primeiraNota = Integer.parseInt(primeiraNotaStr);
-                int segundaNota = Integer.parseInt(segundaNotaStr);
+                Double primeiraNota = Double.parseDouble(primeiraNotaStr);
+                Double segundaNota = Double.parseDouble(segundaNotaStr);
 
-                int media = (primeiraNota + segundaNota) / 2; 
+                Double media = (primeiraNota + segundaNota) / 2; 
+                Double mediaArredondada = (double) Math.round(media * 100) / 100;
 
-                out.println("<h2>Sua media foi -> " + media + "</h2>");
+                out.println("<h2> Sua media foi -> " + mediaArredondada + "</h2>");
             }
         %>
     </body>
